@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Página</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="radio"] {
+            margin-bottom: 10px;
+        }
+        img {
+            max-width: 60px;
+            max-height: 60px;
+            margin-bottom: 20px;
+        }
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        button[type="reset"] {
+            background-color: #6c757d;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: background-color 0.3s;
+        }
+        button[type="reset"]:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Criar Pasta e Copiar Arquivos</h1>
+        <form action="create-folder.php" method="post">
+            <label for="folderName">Nome da Pasta:</label>
+            <input type="text" id="folderName" name="folderName" required>
+            <br>
+            <label for="playerSprite">Jogador:</label>
+            <input type="radio" id="playerSprite1" name="playerSprite" value="https://raw.githubusercontent.com/TakeToBrasil/testeprimeiro/main/player1.png" required>
+            <img src="https://raw.githubusercontent.com/TakeToBrasil/testeprimeiro/main/player.png" alt="Player 1">
+            <input type="radio" id="playerSprite2" name="playerSprite" value="https://raw.githubusercontent.com/TakeToBrasil/testeprimeiro/main/player2.png">
+            <img src="https://raw.githubusercontent.com/TakeToBrasil/testeprimeiro/main/player.png" alt="Player 2">
+            <input type="radio" id="playerSprite3" name="playerSprite" value="https://raw.githubusercontent.com/TakeToBrasil/testeprimeiro/main/player3.png">
+            <img src="https://raw.githubusercontent.com/TakeToBrasil/testeprimeiro/main/player.png" alt="Player 3">
+            <input type="radio" id="playerSprite4" name="playerSprite" value="https://raw.githubusercontent.com/TakeToBrasil/testeprimeiro/main/player4.png">
+            <img src="https://raw.githubusercontent.com/TakeToBrasil/testeprimeiro/main/player.png" alt="Player 4">
+            <input type="radio" id="playerSprite3" name="playerSprite" value="https://raw.githubusercontent.com/TakeToBrasil/testeprimeiro/main/player3.png">
+            
+            <label for="background">Fundo:</label>
+            <input type="radio" id="background1" name="background" value="https://user-images.githubusercontent.com/18351809/46888871-624a3900-ce7f-11e8-808e-99fd90c8a3f4.png" required>
+            <img src="https://user-images.githubusercontent.com/18351809/46888871-624a3900-ce7f-11e8-808e-99fd90c8a3f4.png" alt="Background 1" width="60" height="60">
+            <input type="radio" id="background2" name="background" value="hhttps://user-images.githubusercontent.com/18351809/46888871-624a3900-ce7f-11e8-808e-99fd90c8a3f4.png">
+            <img src="https://user-images.githubusercontent.com/18351809/46888871-624a3900-ce7f-11e8-808e-99fd90c8a3f4.png" alt="Background 2" width="60" height="60">
+            <input type="radio" id="background3" name="background" value="https://user-images.githubusercontent.com/18351809/46888871-624a3900-ce7f-11e8-808e-99fd90c8a3f4.png">
+            <img src="https://user-images.githubusercontent.com/18351809/46888871-624a3900-ce7f-11e8-808e-99fd90c8a3f4.png" alt="Background 3" width="60" height="60">
+            <input type="radio" id="background4" name="background" value="https://user-images.githubusercontent.com/18351809/46888871-624a3900-ce7f-11e8-808e-99fd90c8a3f4.png">
+            <img src="https://user-images.githubusercontent.com/18351809/46888871-624a3900-ce7f-11e8-808e-99fd90c8a3f4.png" alt="Background 4" width="60" height="60">
+            <input type="radio" id="background5" name="background" value="https://user-images.githubusercontent.com/18351809/46888871-624a3900-ce7f-11e8-808e-99fd90c8a3f4.png">
+            <img src="https://user-images.githubusercontent.com/18351809/46888871-624a3900-ce7f-11e8-808e-99fd90c8a3f4.png" alt="Background 5" width="60" height="60">
+            
+            <label for="floor">Chão:</label>
+            <input type="radio" id="floor1" name="floor" value="https://www.pikpng.com/pngl/b/47-474860_ground-flappy-bird-ground-scratch-clipart.png" required>
+            <img src="https://www.pikpng.com/pngl/b/47-474860_ground-flappy-bird-ground-scratch-clipart.png" alt="Floor 1" width="60" height="60">
+            <input type="radio" id="floor2" name="floor" value="https://www.pikpng.com/pngl/b/47-474860_ground-flappy-bird-ground-scratch-clipart.png">
+            <img src="https://www.pikpng.com/pngl/b/47-474860_ground-flappy-bird-ground-scratch-clipart.png" alt="Floor 2" width="60" height="60">
+            <input type="radio" id="floor3" name="floor" value="https://www.pikpng.com/pngl/b/47-474860_ground-flappy-bird-ground-scratch-clipart.png">
+            <img src="https://www.pikpng.com/pngl/b/47-474860_ground-flappy-bird-ground-scratch-clipart.png" alt="Floor 3" width="60" height="60">
+            <input type="radio" id="floor4" name="floor" value="https://www.pikpng.com/pngl/b/47-474860_ground-flappy-bird-ground-scratch-clipart.png">
+            <img src="https://www.pikpng.com/pngl/b/47-474860_ground-flappy-bird-ground-scratch-clipart.png" alt="Floor 4" width="60" height="60">
+            <input type="radio" id="floor5" name="floor" value="https://www.pikpng.com/pngl/b/47-474860_ground-flappy-bird-ground-scratch-clipart.png">
+            <img src="https://www.pikpng.com/pngl/b/47-474860_ground-flappy-bird-ground-scratch-clipart.png" alt="Floor 5" width="60" height="60">
+            
+            <br>
+            <button type="submit">Criar Pasta e Copiar Arquivos</button>
+            <button type="reset">Limpar Campos</button>
+            
+            </form>
